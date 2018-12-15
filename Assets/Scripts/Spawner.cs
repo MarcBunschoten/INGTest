@@ -8,7 +8,6 @@ namespace Zoo
     class Spawner : MonoBehaviour
     {
         public GameObject[] animals;
-        public Feeder feeder;
 
         private void Start()
         {
@@ -18,8 +17,6 @@ namespace Zoo
             {
                 anm.Add(Instantiate(a, transform) as GameObject);
             }
-
-            feeder.animals = anm.ToArray();
         }
     }
 }

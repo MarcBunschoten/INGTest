@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114964853913542288}
   - component: {fileID: 114051299213656744}
   - component: {fileID: 114755402308563808}
+  - component: {fileID: 114042995584949268}
   m_Layer: 5
   m_Name: Lion
   m_TagString: Untagged
@@ -65,6 +66,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &114042995584949268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272796901603832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe71dbc9d4261440b2e37b0bf4267ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114051299213656744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,7 +178,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Balloon: {fileID: 1907526514099044}
   text: {fileID: 114407144777274712}
+  hello: 
+  eat: 
   name: 
+  feedtype: 0
+  trick: {fileID: 0}
 --- !u!114 &114964853913542288
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -9,39 +9,37 @@ public enum FEEDTYPE
     omnivores = 3
 }
 
-public class Feeder : MonoBehaviour {
-    public GameObject[] animals;
-
-    public void Feed(string food)
+namespace Zoo
+{
+    public class Feeder : MonoBehaviour
     {
-        if (food == "leaf")
+        public void Feed(string food)
         {
-            foreach (GameObject a in animals)
+            var x = GameObject.FindObjectsOfType<Animal>();
+
+            if (food == "leaf")
             {
-                Debug.Log(a.name);
-                Animal animal = a.GetComponent<Animal>();
-                if (animal.feedtype == FEEDTYPE.herbivores || animal.feedtype == FEEDTYPE.omnivores)
+                foreach (var a in x)
                 {
-                    animal.EatLeaves();
+                    Animal animal = a.GetComponent<Animal>();
+                    if (animal.feedtype == FEEDTYPE.herbivores || animal.feedtype == FEEDTYPE.omnivores)
+                    {
+                        animal.EatLeaves();
+                    }
+                }
+            }
+
+            if (food == "meat")
+            {
+                foreach (var a in x)
+                {
+                    Animal animal = a.GetComponent<Animal>();
+                    if (animal.feedtype == FEEDTYPE.carnivores || animal.feedtype == FEEDTYPE.omnivores)
+                    {
+                        animal.EatMeat();
+                    }
                 }
             }
         }
-
-        if (food == "meat")
-        {
-            foreach (GameObject a in animals)
-            {
-                Animal animal = a.GetComponent<Animal>();
-                if (animal.feedtype == FEEDTYPE.carnivores || animal.feedtype == FEEDTYPE.omnivores)
-                {
-                    animal.EatMeat();
-                }
-            }
-        }
-    }
-
-    public void test()
-    {
-
     }
 }

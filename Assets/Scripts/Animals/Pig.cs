@@ -12,20 +12,7 @@ namespace Zoo
             name = "dora";
             hello = "oink oink";
             eat = "munch munch oink";
-        }
-
-        public void PerformTrick()
-        {
-            StartCoroutine(DoTrick());
-        }
-
-        IEnumerator DoTrick()
-        {
-            for (int i = 0; i < 360; i++)
-            {
-                transform.localRotation = Quaternion.Euler(i, 0, 0);
-                yield return new WaitForEndOfFrame();
-            }
+            trick = GetComponent<RotateTrick>();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Zoo
             name = "henk";
             hello = "rooaaaoooor";
             eat = "nom nom thx mate";
+            
         }
 
     }

@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 222739628119469348}
   - component: {fileID: 114526069506724724}
   - component: {fileID: 114014464807404962}
-  - component: {fileID: 114938508428900998}
+  - component: {fileID: 114204480395590486}
   m_Layer: 5
-  m_Name: Hippo
+  m_Name: Giraffe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,6 +81,23 @@ MonoBehaviour:
   top: -250
   bottum: 250
   speed: 100
+--- !u!114 &114204480395590486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503268068017508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9134b152ff5145147986736ae0277d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Balloon: {fileID: 1915205937995882}
+  text: {fileID: 114347544836270496}
+  hello: Alex
+  eat: 
+  name: 
+  feedtype: 0
 --- !u!114 &114347544836270496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,7 +130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: nomnomnom oink thx
 --- !u!114 &114526069506724724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,23 +197,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114938508428900998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1503268068017508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64dda0b81d7157140b79833d4b894498, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Balloon: {fileID: 1915205937995882}
-  text: {fileID: 114347544836270496}
-  hello: 
-  eat: 
-  name: 
-  feedtype: 1
 --- !u!222 &222008257743557992
 CanvasRenderer:
   m_ObjectHideFlags: 1

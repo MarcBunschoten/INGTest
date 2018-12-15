@@ -102,7 +102,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 4ba943f93b6165242bc8658133f7f250, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -179,7 +179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: nomnomnom oink thx
+  m_Text: 
 --- !u!114 &114775757915394608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,9 +191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848e5eb755b2a1245b531d3779218fb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
   Balloon: {fileID: 1443667079496550}
   text: {fileID: 114775420087525412}
+  hello: 
+  eat: 
+  name: 
+  feedtype: 3
 --- !u!222 &222137598211177260
 CanvasRenderer:
   m_ObjectHideFlags: 1

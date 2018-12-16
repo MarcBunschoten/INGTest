@@ -11,10 +11,11 @@ namespace Zoo
         [SerializeField]
         private GameObject Balloon;
         [SerializeField]
-        public Text text;
+        private Text text;
         public string hello, eat;
         public string name;
         public FEEDTYPE feedtype;
+        [HideInInspector]
         public RotateTrick trick;
 
         public void Start()

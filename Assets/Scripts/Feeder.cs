@@ -13,6 +13,10 @@ namespace Zoo
 {
     public class Feeder : MonoBehaviour
     {
+        public GameObject leaf;
+        public GameObject meat;
+        public GameObject parent;
+
         public void Feed(string food)
         {
             var x = GameObject.FindObjectsOfType<Animal>();
@@ -25,6 +29,8 @@ namespace Zoo
                     if (animal.feedtype == FEEDTYPE.herbivores || animal.feedtype == FEEDTYPE.omnivores)
                     {
                         animal.EatLeaves();
+                        GameObject l = Instantiate(leaf, parent.transform);
+                        l.GetComponent<Food>().target = a.gameObject;
                     }
                 }
             }
@@ -37,6 +43,8 @@ namespace Zoo
                     if (animal.feedtype == FEEDTYPE.carnivores || animal.feedtype == FEEDTYPE.omnivores)
                     {
                         animal.EatMeat();
+                        GameObject m = Instantiate(meat, parent.transform);
+                        m.GetComponent<Food>().target = a.gameObject;
                     }
                 }
             }

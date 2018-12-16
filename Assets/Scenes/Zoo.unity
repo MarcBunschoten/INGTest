@@ -454,6 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd8daebdba173043a5bbad486b1fb31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leaf: {fileID: 1252298379837110, guid: 50269ca1739572a4ea801dade01847a0, type: 2}
+  meat: {fileID: 1259699609380182, guid: f5694245fd18f1b479d6a88785e9e5b5, type: 2}
+  parent: {fileID: 887016503}
 --- !u!4 &508068157
 Transform:
   m_ObjectHideFlags: 0
@@ -924,7 +927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animals:
-  - {fileID: 1503268068017508, guid: b958e20bbb539374b905fe88c4dacbe9, type: 2}
+  - {fileID: 1702100141487748, guid: a4ba1b265bf6bce49982f52136840e3a, type: 2}
+  - {fileID: 1809470430355788, guid: 56f88e5272271d44b978740877466dd5, type: 2}
   - {fileID: 1503268068017508, guid: e7f8c0fa6e23a0846b1c14e803d8dc87, type: 2}
   - {fileID: 1272796901603832, guid: 20880f50fd7c97041a2f99c8fd3890cf, type: 2}
   - {fileID: 1157437131242584, guid: b4ef08bb34d7e8d42a322a3fb477bd93, type: 2}

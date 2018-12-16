@@ -18,5 +18,10 @@ namespace Zoo
                 anm.Add(Instantiate(a, transform) as GameObject);
             }
         }
+
+        public void SpawnFood()
+        {
+
+        }
     }
 }
